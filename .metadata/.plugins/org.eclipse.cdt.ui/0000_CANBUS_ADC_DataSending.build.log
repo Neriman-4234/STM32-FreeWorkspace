@@ -1,0 +1,30 @@
+16:15:05 **** Incremental Build of configuration Debug for project 0000_CANBUS_ADC_DataSending ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
+..\Core\Src\main.c: In function 'main':
+..\Core\Src\main.c:122:27: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+ HAL_ADC_Start_DMA(&hadc1, &adc_value, 1);    // Start ADC with DMA
+                           ^
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:292:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ..\Core\Src\main.c:21:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:592:19: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length);
+                   ^~~~~~~~~~~~~~~~~
+arm-atollic-eabi-gcc -o 0000_CANBUS_ADC_DataSending.elf Core\Src\main.o Core\Src\stm32f4xx_hal_msp.o Core\Src\stm32f4xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f4xx.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.o startup\startup_stm32f407xx.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../STM32F407VG_FLASH.ld -specs=nosys.specs -static -Wl,-Map=0000_CANBUS_ADC_DataSending.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list 0000_CANBUS_ADC_DataSending.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+  13108	     20	   1848	  14976	   3a80	0000_CANBUS_ADC_DataSending.elf
+Print size information done
+Generate listing file
+Output sent to: 0000_CANBUS_ADC_DataSending.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex 0000_CANBUS_ADC_DataSending.elf 0000_CANBUS_ADC_DataSending.hex 
+Info: Parallel threads used: 1
+
+16:15:05 Build Finished (took 818ms)
+

@@ -1,0 +1,30 @@
+17:48:31 **** Incremental Build of configuration Debug for project 0001_HAL_CanBus_HCSR04 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
+..\Core\Src\main.c: In function 'main':
+..\Core\Src\main.c:137:63: warning: passing argument 4 of 'HAL_CAN_AddTxMessage' makes pointer from integer without a cast [-Wint-conversion]
+    HAL_CAN_AddTxMessage(&hcan1, &pHeader, (uint8_t*)distance, mTxMailbox);
+                                                               ^~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:296:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ..\Core\Src\main.c:21:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h:679:19: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ HAL_StatusTypeDef HAL_CAN_AddTxMessage(CAN_HandleTypeDef *hcan, CAN_TxHeaderTypeDef *pHeader, uint8_t aData[], uint32_t *pTxMailbox);
+                   ^~~~~~~~~~~~~~~~~~~~
+arm-atollic-eabi-gcc -o 0001_HAL_CanBus_HCSR04.elf Core\Src\dwt_stm32_delay.o Core\Src\main.o Core\Src\stm32f4xx_hal_msp.o Core\Src\stm32f4xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f4xx.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.o startup\startup_stm32f407xx.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../STM32F407VG_FLASH.ld -specs=nosys.specs -static -Wl,-Map=0001_HAL_CanBus_HCSR04.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list 0001_HAL_CanBus_HCSR04.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   7544	     20	   1648	   9212	   23fc	0001_HAL_CanBus_HCSR04.elf
+Print size information done
+Generate listing file
+Output sent to: 0001_HAL_CanBus_HCSR04.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex 0001_HAL_CanBus_HCSR04.elf 0001_HAL_CanBus_HCSR04.hex 
+Info: Parallel threads used: 1
+
+17:48:32 Build Finished (took 697ms)
+

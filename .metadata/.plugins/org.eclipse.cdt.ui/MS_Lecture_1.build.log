@@ -1,0 +1,34 @@
+13:00:28 **** Incremental Build of configuration Debug for project MS_Lecture_1 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
+..\Core\Src\main.c: In function 'main':
+..\Core\Src\main.c:105:7: warning: implicit declaration of function 'GPIO_ReadInputDataBit' [-Wimplicit-function-declaration]
+    if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)){
+       ^~~~~~~~~~~~~~~~~~~~~
+..\Core\Src\main.c:105:36: error: 'GPIO_Pin_0' undeclared (first use in this function)
+    if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)){
+                                    ^~~~~~~~~~
+..\Core\Src\main.c:105:36: note: each undeclared identifier is reported only once for each function it appears in
+..\Core\Src\main.c:164:13: error: invalid storage class for function 'MX_GPIO_Init'
+ static void MX_GPIO_Init(void)
+             ^~~~~~~~~~~~
+..\Core\Src\main.c:207:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\Core\Src\main.c: At top level:
+..\Core\Src\main.c:50:13: warning: 'MX_GPIO_Init' used but never defined
+ static void MX_GPIO_Init(void);
+             ^~~~~~~~~~~~
+..\Core\Src\main.c:198:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+ void Error_Handler(void)
+      ^~~~~~~~~~~~~
+..\Core\Src\main.c:164:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+ static void MX_GPIO_Init(void)
+             ^~~~~~~~~~~~
+..\Core\Src\main.c:119:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+ void SystemClock_Config(void)
+      ^~~~~~~~~~~~~~~~~~
+Info: Parallel threads used: 1
+
+13:00:28 Build Finished (took 117ms)
+

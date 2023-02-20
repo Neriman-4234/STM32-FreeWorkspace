@@ -1,0 +1,63 @@
+12:54:23 **** Incremental Build of configuration Debug for project MQ135deneme ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\Examples\ARM\arm_graphic_equalizer_example\arm_graphic_equalizer_example_q31.o ..\Drivers\CMSIS\DSP\Examples\ARM\arm_graphic_equalizer_example\arm_graphic_equalizer_example_q31.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\arm_fully_connected_mat_q7_vec_q15_ref.o ..\Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\arm_fully_connected_mat_q7_vec_q15_ref.c 
+..\Drivers\CMSIS\DSP\Examples\ARM\arm_graphic_equalizer_example\arm_graphic_equalizer_example_q31.c:129:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\DSP_Lib_TestSuite\Common\platform\system_generic.o ..\Drivers\CMSIS\DSP\DSP_Lib_TestSuite\Common\platform\system_generic.c 
+In file included from ..\Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\arm_fully_connected_mat_q7_vec_q15_ref.c:19:0:
+..\Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\ref_functions.h:22:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\DSP_Lib_TestSuite\Common\src\statistics_tests\var_tests.o ..\Drivers\CMSIS\DSP\DSP_Lib_TestSuite\Common\src\statistics_tests\var_tests.c 
+..\Drivers\CMSIS\DSP\DSP_Lib_TestSuite\Common\platform\system_generic.c:26:4: error: #error "No appropriate system file found!"
+   #error "No appropriate system file found!"
+    ^~~~~
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\Source\FilteringFunctions\arm_fir_init_f32.o ..\Drivers\CMSIS\DSP\Source\FilteringFunctions\arm_fir_init_f32.c 
+..\Drivers\CMSIS\DSP\DSP_Lib_TestSuite\Common\src\statistics_tests\var_tests.c:1:19: fatal error: jtest.h: No such file or directory
+ #include "jtest.h"
+                   ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.o ..\Drivers\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c 
+..\Drivers\CMSIS\DSP\Source\FilteringFunctions\arm_fir_init_f32.c:29:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\DSP_Lib_TestSuite\RefLibs\src\ComplexMathFunctions\cmplx_mult_cmplx.o ..\Drivers\CMSIS\DSP\DSP_Lib_TestSuite\RefLibs\src\ComplexMathFunctions\cmplx_mult_cmplx.c 
+..\Drivers\CMSIS\DSP\Source\TransformFunctions\arm_cfft_radix4_q15.c:30:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\Examples\ARM\arm_linear_interp_example\arm_linear_interp_example_f32.o ..\Drivers\CMSIS\DSP\Examples\ARM\arm_linear_interp_example\arm_linear_interp_example_f32.c 
+..\Drivers\CMSIS\DSP\DSP_Lib_TestSuite\RefLibs\src\ComplexMathFunctions\cmplx_mult_cmplx.c:1:17: fatal error: ref.h: No such file or directory
+ #include "ref.h"
+                 ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_f32.o ..\Drivers\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_f32.c 
+..\Drivers\CMSIS\DSP\Examples\ARM\arm_linear_interp_example\arm_linear_interp_example_f32.c:87:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\Source\StatisticsFunctions\arm_var_f32.o ..\Drivers\CMSIS\DSP\Source\StatisticsFunctions\arm_var_f32.c 
+..\Drivers\CMSIS\DSP\Source\MatrixFunctions\arm_mat_mult_f32.c:29:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\arm_depthwise_separable_conv_HWC_q7_ref.o ..\Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\arm_depthwise_separable_conv_HWC_q7_ref.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F411xE -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\CMSIS\DSP\Source\FilteringFunctions\arm_conv_partial_opt_q7.o ..\Drivers\CMSIS\DSP\Source\FilteringFunctions\arm_conv_partial_opt_q7.c 
+..\Drivers\CMSIS\DSP\Source\StatisticsFunctions\arm_var_f32.c:29:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+In file included from ..\Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\arm_depthwise_separable_conv_HWC_q7_ref.c:19:0:
+..\Drivers\CMSIS\NN\NN_Lib_Tests\nn_test\Ref_Implementations\ref_functions.h:22:22: fatal error: arm_math.h: No such file or directory
+ #include "arm_math.h"
+                      ^
+compilation terminated.
+Info: Parallel threads used: 3
+
+12:54:24 Build Finished (took 768ms)
+
